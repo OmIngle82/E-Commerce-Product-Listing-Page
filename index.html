@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="https://placehold.co/40x40/606c38/fefae0?text=S" alt="Shopify Logo">
+                <span>Shopify</span>
+            </a>
+            <nav class="navbar">
+                <a href="#"><i class="fas fa-home"></i> Home</a>
+                <a href="#"><i class="fas fa-box"></i> Products</a>
+                <a href="#"><i class="fas fa-info-circle"></i> About</a>
+                <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+            </nav>
+            <div class="header-right">
+                <div class="search-bar">
+                    <input type="search" placeholder="Search products...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="header-icons">
+                    <a href="#" class="cart-link">
+                        <div class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-counter">0</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container page-content">
+            
+            <!-- Filters -->
+            <aside class="filters">
+                <h2>Filters</h2>
+                <div class="filter-group">
+                    <h3>Category</h3>
+                    <div class="filter-option">
+                        <input type="checkbox" id="cat-smartphones" name="category">
+                        <label for="cat-smartphones">Smartphones</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="cat-laptops" name="category">
+                        <label for="cat-laptops">Laptops</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="cat-fragrances" name="category">
+                        <label for="cat-fragrances">Fragrances</label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h3>Price Range</h3>
+                    <div class="filter-option">
+                        <input type="radio" id="price-1" name="price-range">
+                        <label for="price-1">₹0 - ₹10000</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="radio" id="price-2" name="price-range">
+                        <label for="price-2">₹10001 - ₹50000</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="radio" id="price-3" name="price-range">
+                        <label for="price-3">₹50001+</label>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Products -->
+            <section class="products-section">
+                <div class="sorting-options">
+                    <label for="sort">Sort by:</label>
+                    <div class="select-wrapper">
+                        <select name="sort" id="sort">
+                            <option value="default">Default</option>
+                            <option value="price-asc">Price: Low to High</option>
+                            <option value="price-desc">Price: High to Low</option>
+                        </select>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                
+                <div id="product-grid" class="product-grid">
+                    <!-- Products will be inserted here by JavaScript -->
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Shopify</h4>
+                    <p>Your one-stop shop for the best products online. We are committed to providing quality and value.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Shopify. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
